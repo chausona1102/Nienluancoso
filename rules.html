@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logogamepad.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css"> 
+    <link rel="stylesheet" href="/css/rules.css">
+    <title>Gamepad</title>
+</head>
+<body>
+    <div class="" id="wrapper">
+        <button onclick="window.history.back()" class="back">Trang chủ</button>
+        <div class="content">
+            <h1>Rules</h1>
+            <div class="sudoku">
+                <h3 class="title">1. Sudoku</h3>
+                <h5 class="goal">
+                    🎯 Mục tiêu: <br> 
+                    <p>Điền số từ 1-9 vào ô trống sao cho mỗi hàng, cột và vùng 3x3 không bị trùng số.</p>
+                </h5>
+                <h5>
+                    📜 Luật chơi
+                    <ul class="rules">
+                        <li>Một số ô sẽ có sẵn số ban đầu, không thể thay đổi.</li>
+                        <div class="rule-1">
+                            <img src="/img/sudokurule1.png" alt="" title="Ảnh minh hoạ" width="300px" height="auto">
+                        </div>
+                        <li>Người chơi phải suy luận để điền số còn thiếu.</li>
+                        <div class="rule-2">
+                            <img src="/img/sudokurule2.png" alt="" title="Ảnh minh hoạ" width="300px" height="auto">
+                        </div>
+                        <li>Trò chơi kết thúc khi tất cả ô được điền đúng.</li>
+                        <div class="rule-3">
+                            <!-- <img src="/img/sudokurule2.png" alt="" title="Ảnh minh hoạ" width="300px" height="auto"> -->
+                        </div>
+                    </ul>
+                    <button onclick="window.location.href = 'sudoku.html'">Trải nghiệm</button>
+                </h5>
+            </div>
+            <hr><hr>
+            <div class="sudoku">
+                <h3 class="title">2. Minesweeper - Bomb</h3>
+                <h5 class="goal">
+                    🎯 Mục tiêu: <br> 
+                    <p>Tìm và đánh dấu tất cả các ô chứa mìn mà không kích nổ chúng.</p>
+                </h5>
+                <h5>
+                    📜 Luật chơi
+                    <ul class="rules">
+                        <li>Click vào ô để mở, nếu là số thì nó cho biết có bao nhiêu mìn xung quanh.</li>
+                        <div class="rule-1">
+                            <img src="/img/sudokurule1.png" alt="" title="Ảnh minh hoạ" width="300px" height="auto">
+                        </div>
+                        <li>Nếu mở trúng mìn, bạn thua cuộc.</li>
+                        <div class="rule-2">
+                            <img src="/img/sudokurule2.png" alt="" title="Ảnh minh hoạ" width="300px" height="auto">
+                        </div>
+                        <li>Dùng cờ 🚩 để đánh dấu ô nghi có mìn.</li>
+                        <div class="rule-3">
+                            <img src="/img/sudokurule2.png" alt="" title="Ảnh minh hoạ" width="300px" height="auto">
+                        </div>
+                    </ul>
+                    <button onclick="window.location.href = 'bomb.html'">Trải nghiệm</button>
+                </h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

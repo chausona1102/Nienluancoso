@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logogamepad.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bomb.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>GamePad</title>
+</head>
+<body>
+    <audio id="bgAudio" autoplay>
+        <source src="/audio/jugle.mp3">
+    </audio>
+    <div id="wrapper">
+        <div class="content">
+            <h1><i class="fa fa-gamepad icon"></i>Minesweeper - Bomb<i class="fa fa-gamepad icon"></i></h1>
+            <div id="size-block">
+                <span>Hàng x Ô</span>
+                <input type="number" name="" id="size" max="10" min="3" value="3">
+            </div>
+            <div id="info" class="hide">
+                <h2 id="score">Score: <span class="score">0</span></h2>
+                <h2>Mines: <span class="mines">0</span> </h2>
+            </div>
+            <div id="board" class="hide"></div>
+            <button class="play" id="play" onclick="startGame()">Chơi</button>
+            <button class="completed disabled hide" disabled="true" value="2">Qua màn</button>
+        </div>
+        <a href="/public/index.html"><button class="back"><i class="fa fa-backward"></i>Trang chủ</button></a>
+    </div>
+    <div id="modal">
+        <div class="modal">
+            <h1 class="message-md"></h1>
+            <div class="checkbox"><i class=""></i></div>
+            <img src="/img/Cat_No.jpg" alt="" width="200px" height="auto" class="no-img hide">
+            <img src="/img/yes.jpg" width="200px" height="auto" alt="" class="yes-img hide">
+        </div>
+    </div>
+</body>
+<script src="/js/logicbomb.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logogamepad.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/sudo.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>GamePad</title>
+</head>
+<body>
+    <div id="wrapper">
+        <audio id="bgAudio">
+            <source src="/audio/midtownaudio.mp3">
+        </audio>
+        <!-- <marquee behavior="alternate" direction="left" scrollamount="15">⚔ Cố gắng lên Fen 🏳️😂💪😗</marquee> -->
+        <div class="content">
+            <h1><i class="fa fa-gamepad icon"></i>Sudoku<i class="fa fa-gamepad icon"></i></h1>
+            <label for="" id="showLevel" class="showLevel hide"></label>
+            <button class="play">Chơi</button>
+            <div class="level" id="levelBlock">
+                <label for="levelInput">Chọn cấp độ bắt đầu Max: 100</label>
+                <input type="number" id="levelInput-js" min="1" max="100" class="levelInput" value="1">
+            </div>
+            <div id="sudoku-board"></div>
+            <button id="check-btn" class="hide">Kiểm tra</button>
+            <button class="hide disable" id="completed" disabled="true" title="Phải hoàn thành ma trận">Hoàn thành thử thách</button>
+        </div>
+        <button class="next hide">Bỏ qua</button>
+        <a href="/public/index.html"><button class="back"><i class="fa fa-backward"></i>Trang chủ</button></a>
+    </div>
+    <div id="modal">
+        <div class="modal">
+            <h1 class="message-md"></h1>
+            <div class="checkbox"><i class=""></i></div>
+            <img src="/img/Cat_No.jpg" alt="" width="200px" height="auto" class="no-img">
+            <img src="/img/yes.jpg" width="200px" height="auto" alt="" class="yes-img">
+        </div>
+    </div>
+    <script src="/js/logicsudoku.js"></script>
+</body>
+</html>

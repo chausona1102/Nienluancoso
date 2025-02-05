@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    color: white;
+    opacity: 0.7;
+}
+body{
+    min-height: 100vh;
+    background: url('/img/bg-black.jpg') no-repeat center center; 
+    background-size: cover;
+    overflow-y: hidden;    
+}
+
+
+.container {
+    margin-top: 10px;
+    height: 98vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px #fff;
+    scrollbar-width: thin;
+}
+
+.container .row:nth-child(1){
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.container .row:nth-child(1) h1 {
+    color: white;
+    letter-spacing: 4px;
+}
+
+.container .row:nth-child(2){
+    min-height: 75vh;
+}
+
+.col-3 {
+    border-right: 1px solid #ccc ;
+}
+
+.col-3 .nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.col-3 .nav li{
+    padding: 8px;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.col-3 .nav li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav .sub-nav li {
+    list-style: none;
+}
+
+.col-3 .nav li a{
+    color: white;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+.col-9 .template {
+    gap: 15px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-9 .template .card{
+    height: 29rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.template .card .card-body {
+    padding: 10px;
+}
+
+.template .card .card-title {
+    color: #fff;
+}
+
+.template .card .card-text {
+    color: #fff;
+    opacity: 0.4;
+}
+
+.template .card a {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.template .card a:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+#footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+}
+
+#footer p {
+    text-align: center;
+    color: #ccc;
+}
