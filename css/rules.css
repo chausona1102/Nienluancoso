@@ -5,7 +5,7 @@
 
 html {
     font-family: 'Pacifico', cursive;
-    background: url('/img/bg-black.jpg');
+    background: url('../img/bg-black.jpg');
 }
 
 button.back {

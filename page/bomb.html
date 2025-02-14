@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/logogamepad.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/bomb.css">
-    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="shortcut icon" href="../img/logogamepad.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bomb.css">
     <title>GamePad</title>
 </head>
 <body>
     <audio id="bgAudio" autoplay>
-        <source src="/audio/jugle.mp3">
+        <source src="../audio/jugle.mp3">
     </audio>
     <div id="wrapper">
         <div class="content">
@@ -25,18 +25,24 @@
             </div>
             <div id="board" class="hide"></div>
             <button class="play" id="play" onclick="startGame()">Chơi</button>
-            <button class="completed disabled hide" disabled="true" value="2">Qua màn</button>
+            <div class="btn">
+                <button class="completed disabled hide" disabled="true" value="2">Qua màn</button>
+                <button class="replay hide" onclick="window.location.reload()">Chơi lại</button>
+            </div>
         </div>
-        <a href="/public/index.html"><button class="back"><i class="fa fa-backward"></i>Trang chủ</button></a>
+        <button class="next hide">Bỏ qua</button>
+        <a href="../index.php"><button class="back"><i class="fa fa-backward"></i>Trang chủ</button></a>
     </div>
     <div id="modal">
         <div class="modal">
             <h1 class="message-md"></h1>
             <div class="checkbox"><i class=""></i></div>
-            <img src="/img/Cat_No.jpg" alt="" width="200px" height="auto" class="no-img hide">
-            <img src="/img/yes.jpg" width="200px" height="auto" alt="" class="yes-img hide">
+            <img src="../img/Cat_No.jpg" alt="" width="200px" height="auto" class="no-img hide">
+            <img src="../img/yes.jpg" width="200px" height="auto" alt="" class="yes-img hide">
         </div>
     </div>
 </body>
-<script src="/js/logicbomb.js"></script>
+<script src="../js/logicbomb.js"></script>
+<script>
+</script>
 </html>

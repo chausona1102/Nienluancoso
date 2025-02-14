@@ -2,7 +2,7 @@ html {
     padding: 10px 0;
     height: 100vh;
     overflow-y: hidden;
-    background: url('/img/bg-black.jpg') no-repeat center center; 
+    background: url("../img/bg-black.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -67,7 +67,20 @@ html {
     background-color: #504949;
 }
 
-button.completed, .back, .play {
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.next {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+button.completed, .back, .play, .replay, .next {
     display: block;
     justify-self: center;
     margin-top: 20px;
@@ -95,7 +108,7 @@ button.completed, .back, .play {
     left: 0;
 }
 
-button.completed:hover, .back:hover, .play:hover {
+button.completed:hover, .back:hover, .play:hover, .replay:hover {
     background-color: rgba(47, 47, 52, 0.6);
 }
 

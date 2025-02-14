@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logogamepad.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Gamepad</title>
+</head>
+<body>
+    <button onclick="window.history.back() ">Back</button> 
+    <div id="wrapper">
+        <div class="line-1 line"></div>
+        <div class="line-2 line"></div>
+        <div class="line-3 line"></div>
+        <form action="../php/login.php" method="post" id="form_Login">
+            <legend>Log in</legend>
+            <div class="form-group" style="display: flex;">
+                <label for="username">Username</label>
+                <input type="text" name="username" autocomplete="username" id="username" placeholder="Username: Sona"><br>
+                <span class="message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" autocomplete="current-password" placeholder="Password (>= 8 character)"><br>
+                <span class="message"></span>
+            </div>
+            <div class="form-group">
+                <a href="signin.html" title="Đăng nhập">Sign in</a>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Log in" class="submit">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/Validate.js"></script>
+</html>

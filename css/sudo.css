@@ -2,7 +2,7 @@ html {
     padding: 10px 0;
     height: 100vh;
     overflow-y: hidden;
-    background: url('/img/bg-black.jpg') no-repeat center center; 
+    background: url('../img/bg-black.jpg') no-repeat center center; 
     background-size: cover;
 }
 

@@ -7,6 +7,8 @@ const imgNo = document.querySelector('.no-img');
 const completedBtn = document.querySelector('.completed');
 const mines = document.querySelector('.mines');
 const sizeElement = document.querySelector('#size');
+const nextBtn = document.querySelector('.next');
+
 var size = sizeElement.value;
 var totalMines = size - (size * 1 - 1);
 var score = 0;
@@ -98,11 +100,13 @@ function handleClick (event) {
       messageModal.innerHTML =  null;
       imgYes.classList.toggle('hide');
     }, 2000);
+    window.location.href = "../php/updatescore.php?score=" + score;
     revealAllMines();
   }else {
     const mineCount = countNeighborMines(row,col);
     if(!arr[row][col].revealed){
       score = score + 5;
+      maxscore = score;
     }
     if(score > 30) {
       scoreElement.style.color = 'yellow';
@@ -221,10 +225,34 @@ function startCell() {
 
 function startGame () {
   board.classList.remove('hide');
+  document.querySelector('.replay').classList.toggle('hide');
+  nextBtn.classList.toggle('hide');
   document.querySelector('#info').classList.remove('hide');
   document.querySelector('#play').classList.add('hide');
   document.getElementById('size-block').classList.add('hide');
   completedBtn.classList.remove('hide');
+  createBoard(arr, size, totalMines); 
+  startCell();
+}
+
+nextBtn.addEventListener('click', () => {
+  size++;
+  totalMines++;
+  checkStopGame();
+  size = size > 10 ? 10 : size;
+  completedBtn.classList.add('disabled');
+  board.innerHTML = null;
+  arr = Array.from({length : size}, () => Array(size).fill({}));
   createBoard(arr, size, totalMines);
   startCell();
+})
+
+function checkStopGame () {
+  if(totalMines > 98) {
+    nextBtn.disabled = true;
+    nextBtn.classList.add('disabled');
+    completedBtn.disabled = true;
+    completedBtn.classList.add('disabled');
+    alert('Pha dao');
+  }
 }

@@ -1,0 +1,261 @@
+html {
+    background: url("../img/bg-black.jpg");
+    background-color: #000;
+    font-size: 26px;
+    color: #fff;
+}
+
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+#wrapper {
+    margin-top: 30vh;
+    display: block;
+    justify-self: center;
+    width: 30vw;
+    height: 30vw;
+    animation: fade 1s linear forwards;
+}
+
+legend {
+    font-size: 2em;
+    margin-top: -2rem;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+legend:hover {
+    cursor: cell;
+}
+
+label {
+    font-family: 'Pacifico', cursive;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+label:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+form {
+    z-index: 10;
+    position: absolute;
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10vh;
+    margin-left: 3vh;
+    width: 25vw;
+    height: 25vw;
+    /* overflow: hidden; */
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: fadeForm 2s infinite linear;
+    box-shadow: 0 0 30px 1px #fff inset, 0 0 30px 1px #fff;
+    border-radius: 30% 20% 40% 20%;
+}
+.form-group {
+    gap: 10px;
+    text-align: center;
+}
+
+.form-group input {
+    width: 300px;
+    margin: 5px 0 10px 0;
+    color: #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0 0 4px 1px #fff;
+    padding: 10px 20px;
+}
+
+
+.message {
+    color: red;
+    font-size: .6rem;
+    background-color:rgb(252, 252, 120);
+    font-weight: bolder;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px 1px #fff;
+    font-size: .8rem;
+}
+
+.form-group a {
+    color: #fff;
+    float: left;
+    font-size: .91rem;
+    margin-left: 1.6rem;
+    text-decoration: none;
+}
+
+.form-group .submit {
+    padding: 10px;
+    color: #fff;
+    width: 4rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(70, 70, 70, 0.4);
+}
+
+.form-group .submit:hover {
+    cursor: pointer;
+    background-color: rgba(122, 122, 122, 0.4);
+}
+.form-group .submit:focus {
+    font-size: 16px;
+}
+.form-group .submit:active {
+    transform: translate(2px,2px);
+}
+
+button {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 20px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: #000;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px #fff;
+    cursor: pointer;
+}
+
+.line {
+    z-index: -1;
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: -4.4rem 0 0 0;
+}
+
+.line-1{
+    z-index: -1;
+    width: 28vw;
+    height: 28vw;
+    border: 3px solid red;
+    animation: animation1 5s infinite linear; 
+    box-shadow: 0 0 50px 30px rgb(255, 0, 0) inset;
+}
+
+.line-2{
+    z-index: 1;
+    width: 29vw;
+    height: 29vw;
+    border: 3px solid white;
+    animation: animation2 5s ease infinite; 
+    box-shadow: 0 0 30px 5px rgb(0, 255, 128), 0 0 30px 10px rgb(0, 255, 128) inset;
+}
+.line-3{
+    width: 30vw;
+    height: 30vw;
+    z-index: -3;
+    border: 3px solid blue;
+    border-radius: 50% 35% 50% 35%;
+    animation: animation3 5s infinite linear; 
+    box-shadow: 0 0 50px 20px rgb(0, 140, 255), 0 0 50px 20px rgb(0, 140, 255) inset;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(10px) rotate(-90deg);
+        border-radius: 50% 30% 50% 30%;
+        box-shadow: 0 0 10px 2px rgb(255, 0, 0)  inset;
+    }
+    50%{
+        transform: translateX(0) rotate(-180deg);
+    }
+    75% {
+        transform: translateX(-10px) rotate(-270deg);
+        border-radius: 30% 50% 30% 50%;
+        box-shadow: 0 0 50px 30px rgb(255, 0, 0) inset;
+    }
+    100%{
+        transform: translateX(0) rotate(-360deg); 
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+        border-radius: 50% 30% 50% 30%;
+        box-shadow: 0 0 20px 2px rgb(0, 255, 128), 0 0 30px 5px rgb(0, 255, 128) inset;
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+        border-radius: 30% 50% 30% 50%;
+        box-shadow: 0 0 50px 10px rgb(0, 255, 128), 0 0 30px 5px rgb(0, 255, 128) inset;
+    }
+    100%{
+        transform: translateY(0); 
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    25% {
+        transform: translate(5px,5px) rotate(90deg);
+        box-shadow: 0 0 50px 10px rgb(0, 140, 255), 0 0 50px 20px rgb(0, 140, 255) inset;
+    }
+    50%{
+        box-shadow: 0 0 50px 20px rgb(0, 140, 255), 0 0 50px 20px rgb(0, 140, 255) inset;
+        transform: translate(0) rotate(180);
+    }
+    75% {
+        transform: translate(-5px,-5px) rotate(270deg);
+        box-shadow: 0 0 50px 20px rgb(0, 140, 255);
+    }
+    100%{
+        transform: translate(0) rotate(360deg); 
+    }
+}
+
+@keyframes fadeForm {
+    0%{
+        box-shadow: 0 0 30px 1px #fff inset, 0 0 30px 1px #fff;
+    }
+    50%{
+        box-shadow: 0 0 30px 10px #fff inset, 0 0 30px 10px #fff;
+    }
+    100%{
+        box-shadow: 0 0 30px 1px #fff inset, 0 0 30px 1px #fff;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

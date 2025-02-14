@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Gamepad</title>
+</head>
+<body>
+    <button onclick="window.history.back() ">Back</button>
+    <div id="wrapper">
+        <div class="line-1 line"></div>
+        <div class="line-2 line"></div>
+        <div class="line-3 line"></div>
+        <form action="../php/signin.php" method="post" id="form_Signin">
+            <legend>Sign in</legend>
+            <div class="form-group">
+                <label for="fullname">Fullname</label><br>
+                <input type="text" name="fullname" autocomplete="name" id="fullname" placeholder="Fullname: Chau So Na"><br>
+                <span class="message"></span>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" autocomplete="username" id="username" placeholder="Username: Sona"><br>
+                <span class="message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label><br>
+                <input type="password" name="password" id="password" autocomplete="current-password" placeholder="Password (>= 8 character)"><br>
+                <span class="message"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">comfirm password</label>
+                <input type="password" id="confirm-password" autocomplete="current-password" name="confirm-password" placeholder="Confirm Password"><br>
+                <span class="message"></span>
+            </div>
+            <div class="form-group">
+                <a href="login.html" title="Đăng nhập" style="margin-left: 3.5rem;">Log in</a>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Sign in" class="submit">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/Validate.js"></script>
+</html>
