@@ -49,7 +49,7 @@
                     }, 2000);</script>";
             exit();
         }else {
-            $hashedPassword = password_hash($pw, PASSWORD_DEFAULT);
+            $hashedPassword = password_hash($pw, PASSWORD_DEFAULT, [1,2,3,5,6,5]);
             $stmt = $conn->prepare("INSERT INTO user_table (Username,Pass,Fullname) VALUES(:username, :pass, :fullname)");
             $stmt->bindParam(':username', $usern);
             $stmt->bindParam(':pass', $hashedPassword);

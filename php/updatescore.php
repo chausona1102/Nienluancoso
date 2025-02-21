@@ -35,7 +35,6 @@
                         window.history.back();
                         }, 500);
             </script>';
-            
             exit();
         }else {
             echo '<script>window.history.back();</script>';
@@ -44,7 +43,7 @@
     } catch (PDOException $e) {
         echo "Loi" .$e->getMessage();
         exit();
-    } 
+    }
     $conn = null;
 ?>
 
