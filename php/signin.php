@@ -26,7 +26,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "web_game_data";
+    $dbname = "nienluandb";
     // Kết nối PDO
     try {
         // Kết nối PDO

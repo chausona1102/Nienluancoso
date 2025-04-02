@@ -1,0 +1,19 @@
+.template .list-group {
+    gap: 10px;
+}
+.template .list-group .list-group-item {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+.list-group .list-group-item span {
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+.list-group .list-group-item:hover {
+    cursor: pointer;
+    color: #000;
+    background: rgb(156, 182, 255);
+}

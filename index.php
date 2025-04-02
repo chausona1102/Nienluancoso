@@ -34,6 +34,7 @@
                     </div>
                     <li><a href="#">Home</a></li>
                     <li><a href="page/rules.html">Rules</a></li>
+                    <li><a href="php/rank.php">Rank</a></li>
                     <li><a href="page/login.html" class="loginBtn" style="display: <?php echo $display1; ?>;" >Log in</a></li>
                     <li><a href="php/logout.php" class="loginBtn" style="display: <?php echo $display2; ?>;" >Log out</a></li>
                 </ul>
